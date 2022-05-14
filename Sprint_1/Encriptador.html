@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Sprint 1</title>
+</head>
+<!---->
+
+<body class="d-md-flex flex-md-row">
+    <div class="principal d-flex flex-column">
+        <header>
+            <img src="Imágenes/Logo.png" class="logo" />
+        </header>
+
+        <div class="d-flex flex-column flex-grow">
+            <textarea id="entrada" class="flex-grow" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="controles">
+            <div class="advertencia d-flex">
+                <span class="icon-info"></span>
+                <small>Solo letras minúsculas y sin acentos</small>
+            </div>
+            <div class="d-flex flex-column flex-sm-row">
+                <input type="button" class="button flex-sm-grow" value="Encriptar" onclick="Encriptar()" />
+                <input type="button" class="button flex-sm-grow" value="Desencriptar" onclick="Desencriptar()" />
+            </div>
+        </div>
+    </div>
+    <div class="barra-lateral d-flex flex-column">
+        <div class="info d-flex flex-column flex-grow">
+            <div class="info-img d-none d-md-block">
+                <img src="Imágenes/Muñeco.png" />
+            </div>
+            <div class="info-txt my-auto">
+                <strong>Ningún mensaje fue encontrado</strong><br />
+                <span>Ingresa el texto que desees codificar o decodificar</span>
+            </div>
+        </div>
+        <div id="salida"></div>
+        <input type="button" class="button copiar" onclick="Copiar()" value="copiar" />
+    </div>
+
+    <script src="JavaScript/Encriptar.js"></script>
+</body>
+
+</html>
